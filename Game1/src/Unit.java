@@ -46,8 +46,4 @@ public class Unit {
 		return true;
 	}
 	
-	@Override
-	public String toString() {
-		return this.name;
-	}
 }

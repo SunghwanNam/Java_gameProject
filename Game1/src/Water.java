@@ -1,5 +1,6 @@
 import java.util.Random;
 
+//Unit을 부모 클래스로 Water는 자식클래스로 상속받는다. 
 public class Water extends Unit {
    Water() {
       super();
@@ -9,6 +10,7 @@ public class Water extends Unit {
       this.defense = 5;
    }
 
+ //1~10까지의 랜덤넘버를 돌려 랜덤넘버가 5일때 또는 7일때 3배의 어택을 시킨다.
    @Override
    public int getPower() {
 		System.out.println("***" + this.name+"이(가) 공격합니다." + "***");

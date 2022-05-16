@@ -1,4 +1,5 @@
 
+//Unit을 상속받아 RocketFamCobra이라는 자식 클래스를 생성한다.
 public class RocketFamCobra extends Unit {
 	int defence;
 	int crazy;
@@ -14,8 +15,10 @@ public class RocketFamCobra extends Unit {
 
 	@Override
 	public int getPower() {
-		System.out.println("***" + this.name+"이(가) 공격합니다." + "***");
+		// Override를 통해 부모클래스의 getPower를 덮어쓴다.
+		System.out.println("***" + this.name + "이(가) 공격합니다." + "***");
 		if (this.hp < 15) {
+			// 해당 객체의 hp가 15보다 작을 경우 this.crazy의 값을 더해 반환한다.
 			System.out.println("<< 독 물어뜯기! >>");
 			return this.attack + this.crazy;
 		} else {
