@@ -12,7 +12,7 @@ public class Plant extends Unit {
 //이상해씨는 getPower라는 메소드에서 0~9까지의 랜덤넘버를 돌리고 만약 1일때 4배의 공격을 할 수 있게 한다.
 	@Override
 	public int getPower() {
-		System.out.println("***" + this.name+"이(가) 공격합니다." + "***");
+		System.out.println("***" + this.name + "이(가) 공격합니다." + "***");
 		Random r = new Random();
 		int critical = r.nextInt(10);
 		if (critical == 1) {
@@ -22,6 +22,6 @@ public class Plant extends Unit {
 			System.out.println("<<  이상해씨 공격!  >>");
 			return this.attack;
 		}
-	
+
 	}
 }

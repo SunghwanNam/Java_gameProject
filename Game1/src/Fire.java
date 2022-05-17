@@ -1,9 +1,7 @@
 
-
 //Unit을 부모 클래스로 Fire는 자식클래스로 상속받는다. 
 public class Fire extends Unit {
 	int hellfire;
-
 
 	Fire() {
 		super();

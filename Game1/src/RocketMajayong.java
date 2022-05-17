@@ -11,11 +11,11 @@ public class RocketMajayong extends Unit {
 
 	@Override
 	public int getPower() {
-		//Override를 통해 부모클래스의 getPower를 덮어쓴다.
+		// Override를 통해 부모클래스의 getPower를 덮어쓴다.
 		System.out.println("***" + this.name + "이(가) 공격합니다." + "***");
 		Random r = new Random();
 		int critical = r.nextInt(3);
-		// 1/3의 확률로 3배의 공격력을 반환한다. 
+		// 1/3의 확률로 3배의 공격력을 반환한다.
 		if (critical == 1) {
 			System.out.println("<<  마자~~~~~~~용!  >>");
 			return this.attack * 3;
